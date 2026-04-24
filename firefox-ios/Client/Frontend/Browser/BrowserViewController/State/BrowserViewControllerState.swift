@@ -75,10 +75,10 @@ struct BrowserViewControllerState: ScreenState {
 
     init(windowUUID: WindowUUID) {
         self.init(
+            windowUUID: windowUUID,
             searchScreenState: SearchScreenState(),
             toast: nil,
             showOverlay: nil,
-            windowUUID: windowUUID,
             shouldShowReaderModeBarSummarizerButton: false,
             browserViewType: .normalHomepage,
             navigateTo: nil,
@@ -90,10 +90,10 @@ struct BrowserViewControllerState: ScreenState {
     }
 
     init(
+        windowUUID: WindowUUID,
         searchScreenState: SearchScreenState,
         toast: ToastType? = nil,
         showOverlay: Bool? = nil,
-        windowUUID: WindowUUID,
         reloadWebView: Bool = false,
         shouldStartAtHome: Bool = false,
         shouldShowReaderModeBarSummarizerButton: Bool,
